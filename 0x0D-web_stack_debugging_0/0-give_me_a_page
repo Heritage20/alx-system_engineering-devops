@@ -1,21 +1,4 @@
-B
-B
-A
-A
-B
-B
-B
-A
-A
-A
-A
-A
-A
-B
-B
-B
-B
-
-C
-C
-
+#!/usr/bin/env bash
+# get Apache to run on the container and to return a page containing
+# Hello Holberton when querying the root of it
+service apache2 start
