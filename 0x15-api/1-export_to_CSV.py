@@ -1,12 +1,13 @@
 #!/usr/bin/python3
-# Module that calls RESTful API and exports to CSV file
 import csv
 import requests
 from sys import argv
 
 
 if __name__ == "__main__":
-    '''Gives name of employee and completed tasks and exports as CSV file'''
+    '''Gives name of employee and completed tasks and exports as CSV file
+    Module that calls RESTful API and exports to CSV file
+    '''
     if len(argv) is not 2:
         print("Command takes 2 arguments")
         exit

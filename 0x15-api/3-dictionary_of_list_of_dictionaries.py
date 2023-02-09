@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-# Module that calls RESTful API and exports to JSON file for all users
 import json
 import requests
 from sys import argv
@@ -7,7 +6,8 @@ from sys import argv
 
 if __name__ == "__main__":
     '''Gives name of employee and completed tasks and exports as JSON file
-    for all users
+    for all 
+    Module that calls RESTful API and exports to JSON file for all users
     '''
     url = "https://jsonplaceholder.typicode.com/users"
     req = requests.get(url)

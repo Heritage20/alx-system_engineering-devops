@@ -1,11 +1,12 @@
 #!/usr/bin/python3
-# Module that calls RESTful API
 import requests
 from sys import argv
 
 
 if __name__ == "__main__":
-    '''Gives name of employee and completed tasks'''
+    '''Gives name of employee and completed tasks
+        Module that calls RESTful API
+    '''
     if len(argv) is not 2:
         print("Command takes 2 arguments")
         exit
