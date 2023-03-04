@@ -1,0 +1,68 @@
+[34m
+* Datadog Agent 7 install script v1.15.0
+[0m
+[34m
+* Installing apt-transport-https, curl and gnupg
+[0m
+Ign:1 https://apt.datadoghq.com stable InRelease
+Hit:2 https://apt.datadoghq.com stable Release
+Hit:3 http://archive.ubuntu.com/ubuntu focal InRelease
+Hit:4 http://security.ubuntu.com/ubuntu focal-security InRelease
+Hit:5 http://ppa.launchpad.net/brightbox/ruby-ng/ubuntu focal InRelease
+Hit:6 http://archive.ubuntu.com/ubuntu focal-updates InRelease
+Hit:7 http://archive.ubuntu.com/ubuntu focal-backports InRelease
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+curl is already the newest version (7.68.0-1ubuntu2.16).
+gnupg is already the newest version (2.2.19-3ubuntu2.2).
+apt-transport-https is already the newest version (2.0.9).
+0 upgraded, 0 newly installed, 0 to remove and 161 not upgraded.
+[34m
+* Installing APT package sources for Datadog
+[0m
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100  6226  100  6226    0     0  58735      0 --:--:-- --:--:-- --:--:-- 58735
+gpg: key 32637D44F14F620E: "Datadog, Inc. Master key (2020-09-08) <package+masterkey@datadoghq.com>" not changed
+gpg: Total number processed: 1
+gpg:              unchanged: 1
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100  6226  100  6226    0     0  27307      0 --:--:-- --:--:-- --:--:-- 27307
+gpg: key 32637D44F14F620E: "Datadog, Inc. Master key (2020-09-08) <package+masterkey@datadoghq.com>" not changed
+gpg: Total number processed: 1
+gpg:              unchanged: 1
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100  9001  100  9001    0     0  48654      0 --:--:-- --:--:-- --:--:-- 86548
+gpg: key D3A80E30382E94DE: "Datadog, Inc <package@datadoghq.com>" not changed
+gpg: Total number processed: 1
+gpg:              unchanged: 1
+[34m
+* Installing the Datadog Agent package
+[0m
+Ign:1 https://apt.datadoghq.com stable InRelease
+Hit:2 https://apt.datadoghq.com stable Release
+Reading package lists...
+  [33mInstalling package(s): datadog-agent datadog-signing-keys
+[0m
+Reading package lists...
+Building dependency tree...
+Reading state information...
+datadog-signing-keys is already the newest version (1:1.2.0-1).
+datadog-agent is already the newest version (1:7.43.0-1).
+0 upgraded, 0 newly installed, 0 to remove and 161 not upgraded.
+W: --force-yes is deprecated, use one of the options starting with --allow instead.
+[34m
+* Keeping old /etc/datadog-agent/datadog.yaml configuration file
+[0m
+[34m
+  * DD_INSTALL_ONLY environment variable set.[0m
+[34m
+    The newly installed version of the Datadog Agent will not be started.
+    You will have to do it manually using the following command:
+  
+     service datadog-agent start[0m
+
